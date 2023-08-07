@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checkout Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <h1>Electronic Gadgets</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="orderdetails.html">Order details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="search.html">Search</a></li>
+
+        </ul>
+    </nav>
+
+    <!------------ Checkout Page ----------->
+
+    <main style="background-color: beige;">
+        <section class="checkout">
+            <h2>Checkout</h2>
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <ul>
+                    <li>
+                        <span>Product 1</span>
+                        <span>$200</span>
+                    </li>
+                    <li>
+                        <span>Product 2</span>
+                        <span>$150</span>
+                    </li>
+                    <!-- Add more ordered products as needed -->
+                </ul>
+                <p>Total: $350</p>
+            </div>
+            <div class="shipping-info">
+                <h3>Shipping Information</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <!-- Add more shipping fields as needed -->
+                </form>
+            </div>
+            <div class="payment-info">
+                <h3>Payment Information</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="card">Card Number</label>
+                        <input type="text" id="card" name="card" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" name="expiry" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    </div>
+                    <!-- Add more payment fields as needed -->
+                </form>
+            </div>
+            <a href="index.html" class="checkout-btn" style="text-align: center; margin-bottom: 5px;">Ordered</a>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2023 Electronic Gadgets. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

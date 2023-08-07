@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Account Setting Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <h1>Electronic Gadgets</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="orderdetails.html">Order details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="search.html">Search</a></li>
+
+        </ul>
+    </nav>
+
+    <!------------ Account Setting Page ------------>
+    <main>
+        <section class="account-settings-section">
+            <a href="accsetting.html">
+                <h3>Account Settings</h3>
+            </a>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">New Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+
+                <button type="submit">Save Changes</button>
+
+            </form>
+            <button class="logout-btn">Logout</button>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2023 Electronic Gadgets. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

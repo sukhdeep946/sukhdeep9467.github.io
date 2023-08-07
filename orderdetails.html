@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Order Details Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png">
+        </div>
+        <h1>Electronic Gadgets</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="orderdetails.html">Order details</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="search.html">Search</a></li>
+
+        </ul>
+    </nav>
+
+    <!------------ Order Details Page ----------->
+
+    <main
+        style="background: linear-gradient(207deg, rgba(131,58,180,1) 0%, rgba(29,195,253,1) 50%, rgba(252,176,69,1) 100%);;">
+        <section class="order-details">
+            <h2>Order Details</h2>
+            <div class="delivery-info">
+                <h3>Delivery Information</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </form>
+            </div>
+            <div class="payment-confirmation">
+                <h3>Payment Confirmation</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <input type="text" id="payment-method" name="payment-method" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" name="expiry-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required>
+                    </div>
+                </form>
+            </div>
+            <div class="delivery-time">
+                <h3>Preferred Delivery Time</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="delivery-date">Delivery Date</label>
+                        <input type="date" id="delivery-date" name="delivery-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-time">Delivery Time</label>
+                        <input type="time" id="delivery-time" name="delivery-time" required>
+                    </div>
+                </form>
+            </div>
+            <a href="cart.html" class="checkout-btn" style="text-align: center; margin-bottom: 5px;">Ordered</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Electronic Gadgets. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
